@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script type="text/javascript" src="js/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/ttw-music-player-min.js"></script>
+    <script type="text/javascript" src="js/myplaylist.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var description = 'The aarti is a form of worship, and is one of the most prominent rituals in the Sanatan Dharma. The aarti is performed by gently waving lighted wicks, soaked in ghee candle before the murti of Bhagwan, together with the ringing of the bell, the beating of drums, and a song that praises Him. The flame is held either in both hands or in the right hand and gently waved around the Murti of Bhagwan. The flame is waved in a clockwise direction: first, it is waved around Bhagwan’s feet four times, then the belly twice, then the face once, and then seven times around the entire body. Once the aarti is complete, a conch shell is used to offer water to the flame. At times, flowers, drum beats, dhoop (incense) and kapoor (camphor) are also used. The flame is then offered to Bhagwan, and then to others.';
+
+            $('body').ttwMusicPlayer(myPlaylist, {
+                autoPlay:false, 
+                description:description,
+                jPlayer:{
+                    swfPath:'js/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="title"></div>
+</body>
+</html>
